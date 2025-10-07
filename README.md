@@ -201,19 +201,28 @@ A concise guide to the essential **Bash syntax**, with examples and best practic
 
 ## 🧠 Pro Template for All Scripts
 
-``bash
-#!/usr/bin/env bash
-set -euo pipefail
-IFS=$'\n\t'
 
-# Author: <Your Name>
-# Description: <Short explanation>
-# Usage: ./script.sh [options]
+`#!/usr/bin/env bash`
+`set -euo pipefail`
+`IFS=$'\n\t'`
 
-main() {
-  echo "Script starting..."
-  # your logic here
-}
+`#Author: <Your Name>`
+`#Description: <Short explanation>`
+`#Usage: ./script.sh [options]`
 
-main "$@"
+`main()`
+`{`
+`echo "Script starting..."`
+`# your logic here`
+`}`
+
+**✅ Safe — prevents silent errors**
+**✅ Portable — works across distros**
+**✅ Professional — clean entry point and structure**
+
+## Rule
+
+### 🧩 “Write shell scripts like blueprints, simple, modular, and reusable.” 
+
+
 
